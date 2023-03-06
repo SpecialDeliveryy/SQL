@@ -1,0 +1,24 @@
+CREATE TABLE World_of_Disney (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, color TEXT, theme TEXT);
+
+INSERT INTO World_of_Disney VALUES (1, "Mickey_ears", 29, "gold", "celebration");
+INSERT INTO World_of_Disney VALUES (2, "Pins", 16, "blue", "Frozen");
+INSERT INTO World_of_Disney VALUES (3, "Backpack",64,"blue","aquamarine");
+INSERT INTO World_of_Disney VALUES (4, "Dooney&Boourke_Purse",60,"white","disney_dogs");
+INSERT INTO World_of_Disney VALUES (5, "Mickey_pencil",2,"black","ears_shape");
+INSERT INTO World_of_Disney VALUES (6, "Mug",26,"pale","Mr_Toad");
+INSERT INTO World_of_Disney VALUES (7, "Jersey",70,"black","Star_Wars");
+INSERT INTO World_of_Disney VALUES (8, "LightSaber",200,"red","Star_Wars");
+INSERT INTO World_of_Disney VALUES (9, "crystal",16,"blue","Star_Wars");
+INSERT INTO World_of_Disney VALUES (10, "Obi_Wan_robe",100,"brown","Star_Wars");
+INSERT INTO World_of_Disney VALUES (11, "plush",30,"blue","Sitch");
+INSERT INTO World_of_Disney VALUES (12, "plate_set",45,"white","christmas");
+INSERT INTO World_of_Disney VALUES (13, "puzzle",23,"dark","disney_villans");
+INSERT INTO World_of_Disney VALUES (14, "Dog_collar",16,"purple","Mickey");
+INSERT INTO World_of_Disney VALUES (15, "Tumbler",27,"pink","Star_Wars");
+INSERT INTO World_of_Disney VALUES (16, "Thanos_Gauntlet",80,"gold","Marvel");
+
+-Display database by a certain theme
+SELECT * FROM World_of_Disney WHERE theme = "Star_Wars";
+
+-Display database by most expensive item
+SELECT MAX(price) FROM World_of_Disney;
